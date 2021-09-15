@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python-tutorial-api:
+    build:
+      context: .
+      dockerfile: ./dockerfile
+    ports:
+      - 6543:6543
+    volumes:
+      - ./:/app
